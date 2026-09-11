@@ -12,7 +12,7 @@ import Countdown from "./Countdown";
 import RSVP from "./RSVP";
 
 const heroPhoto = new URL(
-  "../assets/foto 1.jpg",
+  "../assets/foto sampul.jpg",
   import.meta.url
 ).href;
 
@@ -339,7 +339,7 @@ export default function Hero() {
                 lineHeight: 1,
               }}
             >
-              Hasmita Ismail
+              Hasmita Ismail, A.Md.Keb
             </p>
           </div>
         </div>
@@ -374,7 +374,7 @@ export default function Hero() {
             left: 0,
             width: "100%",
             height: "100%",
-            objectFit: "fill",
+            objectFit: "cover",
 
             display: "block",
             margin: 0,
@@ -654,7 +654,7 @@ export default function Hero() {
 
             width: "100%",
             height: "calc(100% + 40px)",
-            objectFit: "fill",
+            objectFit: "cover",
 
             display: "block",
             margin: 0,
@@ -797,10 +797,10 @@ export default function Hero() {
           position: "relative",
           zIndex: 6,
           backgroundImage: `url(${red1Background})`,
-          backgroundSize: "100% 100%",
+          backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
-          overflow: "visible",
+          overflow: "hidden",
 
           width: "100%",
           display: "flex",
@@ -970,7 +970,7 @@ export default function Hero() {
           >
             <img
               src={framePhoto2}
-              alt="Hasmita Ismail"
+              alt="Hasmita Ismail, A.Md.Keb"
               loading="lazy"
               style={{
                 display: "block",
@@ -1000,7 +1000,7 @@ export default function Hero() {
                 whiteSpace: "nowrap",
               }}
             >
-              Hasmita Ismail
+              Hasmita Ismail, A.Md.Keb
             </div>
           </div>
           <div
@@ -1059,10 +1059,10 @@ export default function Hero() {
           position: "relative",
           zIndex: 2,
           backgroundImage: `url(${red1Background})`,
-          backgroundSize: "100% 100%",
+          backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
-          overflow: "visible",
+          overflow: "hidden",
 
           width: "100%",
           boxSizing: "border-box",
@@ -1078,10 +1078,10 @@ export default function Hero() {
           position: "relative",
           zIndex: 1,
           backgroundImage: `url(${white1Background})`,
-          backgroundSize: "100% 100%",
+          backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
-          overflow: "visible",
+          overflow: "hidden",
 
           width: "100%",
 
@@ -1648,7 +1648,7 @@ function GallerySection({
             }
           : {
               backgroundImage: `url(${background})`,
-              backgroundSize: "100% 100%",
+              backgroundSize: "cover",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
             }),
@@ -1668,7 +1668,7 @@ function GallerySection({
             display: "block",
             margin: 0,
             padding: 0,
-            objectFit: "fill",
+            objectFit: "cover",
             objectPosition: "center",
             zIndex: 0,
             pointerEvents: "none",

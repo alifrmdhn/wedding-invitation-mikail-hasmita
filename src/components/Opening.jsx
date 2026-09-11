@@ -3,7 +3,7 @@ import { useState } from "react";
 import { FaEnvelopeOpenText } from "react-icons/fa6";
 
 const coverPhoto = new URL(
-  "../assets/foto sampul.jpg",
+  "../assets/foto sampul hitam putih.jpeg",
   import.meta.url
 ).href;
 
@@ -145,7 +145,7 @@ export default function Opening({ onOpen }) {
               </span>
 
               <p>
-                Hasmita Ismail
+                Hasmita Ismail, A.Md.Keb
               </p>
             </div>
           </motion.div>
