@@ -79,8 +79,8 @@ function App() {
         minHeight: "100vh",
         backgroundColor: "transparent",
         backgroundImage: `url(${redBackground})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundSize: "100% 100%",
+        backgroundPosition: "center center",
         backgroundRepeat: "no-repeat",
       }}
     >

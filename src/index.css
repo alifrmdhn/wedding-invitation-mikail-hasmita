@@ -48,7 +48,7 @@ body {
   bottom: -18px;
   left: -18px;
   background-image: var(--opening-bg);
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: center center;
   background-repeat: no-repeat;
   transform: scale(1.02);

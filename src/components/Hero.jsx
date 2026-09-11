@@ -374,7 +374,7 @@ export default function Hero() {
             left: 0,
             width: "100%",
             height: "100%",
-            objectFit: "cover",
+            objectFit: "fill",
 
             display: "block",
             margin: 0,
@@ -649,12 +649,12 @@ export default function Hero() {
           aria-hidden="true"
           style={{
             position: "absolute",
-            top: "-40px",
+            top: 0,
             left: 0,
 
             width: "100%",
-            height: "calc(100% + 40px)",
-            objectFit: "cover",
+            height: "100%",
+            objectFit: "fill",
 
             display: "block",
             margin: 0,
@@ -797,8 +797,8 @@ export default function Hero() {
           position: "relative",
           zIndex: 6,
           backgroundImage: `url(${red1Background})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundSize: "100% 100%",
+          backgroundPosition: "center center",
           backgroundRepeat: "no-repeat",
           overflow: "hidden",
 
@@ -1059,8 +1059,8 @@ export default function Hero() {
           position: "relative",
           zIndex: 2,
           backgroundImage: `url(${red1Background})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundSize: "100% 100%",
+          backgroundPosition: "center center",
           backgroundRepeat: "no-repeat",
           overflow: "hidden",
 
@@ -1078,8 +1078,8 @@ export default function Hero() {
           position: "relative",
           zIndex: 1,
           backgroundImage: `url(${white1Background})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundSize: "100% 100%",
+          backgroundPosition: "center center",
           backgroundRepeat: "no-repeat",
           overflow: "hidden",
 
@@ -1642,41 +1642,12 @@ function GallerySection({
         paddingBottom: "80px",
         textAlign: "center",
         overflow: "visible",
-        ...(light
-          ? {
-              background: "#ffffff",
-            }
-          : {
-              backgroundColor: "#a9003b",
-              backgroundImage: `url(${background})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat",
-            }),
+        backgroundImage: `url(${background})`,
+        backgroundSize: "100% 100%",
+        backgroundPosition: "center center",
+        backgroundRepeat: "no-repeat",
       }}
     >
-      {light && (
-        <img
-          src={background}
-          alt=""
-          aria-hidden="true"
-          style={{
-            position: "absolute",
-            top: "-40px",
-            left: 0,
-            width: "100%",
-            height: "calc(100% + 40px)",
-            display: "block",
-            margin: 0,
-            padding: 0,
-            objectFit: "cover",
-            objectPosition: "center",
-            zIndex: 0,
-            pointerEvents: "none",
-          }}
-        />
-      )}
-
       <div
         style={{
           position: "relative",
@@ -1751,8 +1722,6 @@ function GallerySection({
               <img
                 src={photo}
                 alt={`Gallery ${index + 1}`}
-                loading="lazy"
-                decoding="async"
                 style={{
                   display: "block",
                   width: "100%",
