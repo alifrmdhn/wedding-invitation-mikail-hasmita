@@ -15,7 +15,7 @@ const weddingMusic = new URL(
 ).href;
 
 const redBackground = new URL(
-  "./assets/bg merah.png",
+  "./assets/bg merah.webp",
   import.meta.url
 ).href;
 

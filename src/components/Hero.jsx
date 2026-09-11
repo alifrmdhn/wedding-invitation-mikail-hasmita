@@ -17,17 +17,17 @@ const heroPhoto = new URL(
 ).href;
 
 const white2Background = new URL(
-  "../assets/putih 2.png",
+  "../assets/putih 2.webp",
   import.meta.url
 ).href;
 
 const white1Background = new URL(
-  "../assets/putih 1.png",
+  "../assets/putih 1.webp",
   import.meta.url
 ).href;
 
 const red1Background = new URL(
-  "../assets/merah 1.png",
+  "../assets/merah 1.webp",
   import.meta.url
 ).href;
 
@@ -42,7 +42,7 @@ const secondPhoto = new URL(
 ).href;
 
 const element1 = new URL(
-  "../assets/elemen 1.png",
+  "../assets/elemen 1.webp",
   import.meta.url
 ).href;
 
@@ -52,7 +52,7 @@ const element1 = new URL(
 // ).href;
 
 const calendarPhoto = new URL(
-  "../assets/kalender.png",
+  "../assets/kalender.webp",
   import.meta.url
 ).href;
 

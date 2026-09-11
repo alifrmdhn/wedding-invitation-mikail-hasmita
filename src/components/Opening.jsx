@@ -3,12 +3,12 @@ import { useState } from "react";
 import { FaEnvelopeOpenText } from "react-icons/fa6";
 
 const coverPhoto = new URL(
-  "../assets/foto sampul hitam putih.jpeg",
+  "../assets/foto sampul.jpg",
   import.meta.url
 ).href;
 
 const heroBackground = new URL(
-  "../assets/bg merah.png",
+  "../assets/bg merah.webp",
   import.meta.url
 ).href;
 
