@@ -934,7 +934,7 @@ export default function Hero() {
                 "0 1px 2px rgba(0, 0, 0, 0.25)",
             }}
           >
-            <div>Putra ke-2 dari</div>
+            <div>Putra Kedua dari</div>
             <div>
               Bapak Nei, S.Pd.I &amp; Ibu Rostini
             </div>
