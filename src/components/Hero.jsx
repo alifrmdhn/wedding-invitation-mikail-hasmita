@@ -206,7 +206,6 @@ export default function Hero() {
 
   return (
     <section
-      className="invitation-root"
       style={{
         width: "100%",
         maxWidth: "390px",
@@ -359,7 +358,7 @@ export default function Hero() {
           paddingTop: RED_INTRO_PADDING_TOP,
           paddingBottom: "80px",
 
-          overflow: "visible",
+          overflow: "hidden",
           zIndex: 8,
         }}
       >
@@ -427,6 +426,8 @@ export default function Hero() {
 
             lineHeight: 1.45,
             textAlign: "center",
+            textShadow:
+              "0 1px 3px rgba(60, 0, 20, 0.85), 0 2px 10px rgba(60, 0, 20, 0.7)",
             position: "relative",
             zIndex: 3,
           }}
@@ -649,11 +650,11 @@ export default function Hero() {
           aria-hidden="true"
           style={{
             position: "absolute",
-            top: 0,
+            top: "-40px",
             left: 0,
 
             width: "100%",
-            height: "100%",
+            height: "calc(100% + 40px)",
             objectFit: "fill",
 
             display: "block",
@@ -729,13 +730,16 @@ export default function Hero() {
             }}
           />
           <div
+            className="event-address"
             style={{
               fontFamily:
                 '"Heligthon Signature", cursive',
               color: "#b0003a",
               fontSize: "15px",
-              lineHeight: 1,
+              lineHeight: 1.2,
               marginBottom: "4px",
+              maxWidth: "100%",
+              boxSizing: "border-box",
             }}
           >
             Akad - Dusun Matana, Desa Tellumpoccoe, Kec. Marusu, Kab. Maros
@@ -753,13 +757,16 @@ export default function Hero() {
             09.00 WITA
           </div>
           <div
+            className="event-address"
             style={{
               fontFamily:
                 '"Heligthon Signature", cursive',
               color: "#b0003a",
               fontSize: "15px",
-              lineHeight: 1,
+              lineHeight: 1.2,
               marginBottom: "4px",
+              maxWidth: "100%",
+              boxSizing: "border-box",
             }}
           >
             Resepsi - Dusun Jenna, Desa Polewali, Kec. Sinjai Selatan, Kab. Sinjai
@@ -1642,12 +1649,40 @@ function GallerySection({
         paddingBottom: "80px",
         textAlign: "center",
         overflow: "visible",
-        backgroundImage: `url(${background})`,
-        backgroundSize: "100% 100%",
-        backgroundPosition: "center center",
-        backgroundRepeat: "no-repeat",
+        ...(light
+          ? {
+              background: "transparent",
+            }
+          : {
+              backgroundImage: `url(${background})`,
+              backgroundSize: "100% 100%",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+            }),
       }}
     >
+      {light && (
+        <img
+          src={background}
+          alt=""
+          aria-hidden="true"
+          style={{
+            position: "absolute",
+            top: "-40px",
+            left: 0,
+            width: "100%",
+            height: "calc(100% + 40px)",
+            display: "block",
+            margin: 0,
+            padding: 0,
+            objectFit: "fill",
+            objectPosition: "center",
+            zIndex: 0,
+            pointerEvents: "none",
+          }}
+        />
+      )}
+
       <div
         style={{
           position: "relative",

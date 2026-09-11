@@ -270,14 +270,9 @@ body {
   filter: none;
 }
 
-/* Undangan memenuhi layar penuh di mobile agar tidak ada
-   celah/corak background di sisi kiri & kanan foto. */
-@media (max-width: 600px) {
-  .invitation-root {
-    width: 100% !important;
-    max-width: 100% !important;
-    margin: 0 !important;
-  }
+.event-address {
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .scroll-reveal-section.is-visible > *,
