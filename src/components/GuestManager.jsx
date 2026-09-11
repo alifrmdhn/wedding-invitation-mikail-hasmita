@@ -15,7 +15,7 @@ Dengan penuh rasa syukur dan bahagia, kami bermaksud mengundang Bapak/Ibu/Saudar
 
 Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila berkenan hadir.
 
-Mikail & Hasmita
+Mikail & Mita
 
 💌 Buka Undangan:
 {LINK}
