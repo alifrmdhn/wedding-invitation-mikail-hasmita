@@ -104,7 +104,7 @@ export default function Opening({ onOpen }) {
             variants={itemVariants}
             className="opening-title"
           >
-            Mikail &amp; Hasmita
+            Mikail &amp; Mita
           </motion.h1>
 
           <motion.div
@@ -128,7 +128,7 @@ export default function Opening({ onOpen }) {
             <div className="opening-polaroid-photo">
               <img
                 src={coverPhoto}
-                alt="Hasmita dan Mikail"
+                alt="Mita dan Mikail"
                 loading="eager"
                 fetchPriority="high"
                 decoding="async"

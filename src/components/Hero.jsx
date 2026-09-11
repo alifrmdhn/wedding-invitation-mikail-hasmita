@@ -37,7 +37,7 @@ const whiteLine = new URL(
 ).href;
 
 const secondPhoto = new URL(
-  "../assets/foto 2.png",
+  "../assets/foto 2.webp",
   import.meta.url
 ).href;
 
@@ -80,33 +80,33 @@ const sectionMotion = {};
 const fadeInMotion = {};
 
 const gallery1Photos = [
-  new URL("../assets/gal1.jpeg", import.meta.url).href,
-  new URL("../assets/gal2.jpeg", import.meta.url).href,
-  new URL("../assets/gal3.jpeg", import.meta.url).href,
-  new URL("../assets/gal4.jpeg", import.meta.url).href,
+  new URL("../assets/gal1.webp", import.meta.url).href,
+  new URL("../assets/gal2.webp", import.meta.url).href,
+  new URL("../assets/gal3.webp", import.meta.url).href,
+  new URL("../assets/gal4.webp", import.meta.url).href,
 ];
 
 const gallery2Photos = [
-  new URL("../assets/gal5.jpeg", import.meta.url).href,
-  new URL("../assets/gal6.jpeg", import.meta.url).href,
-  new URL("../assets/gal7.jpeg", import.meta.url).href,
-  new URL("../assets/gal8.jpeg", import.meta.url).href,
+  new URL("../assets/gal5.webp", import.meta.url).href,
+  new URL("../assets/gal6.webp", import.meta.url).href,
+  new URL("../assets/gal7.webp", import.meta.url).href,
+  new URL("../assets/gal8.webp", import.meta.url).href,
 ];
 
 const gallery3Photos = [
-  new URL("../assets/gal9.jpeg", import.meta.url).href,
-  new URL("../assets/gal10.jpeg", import.meta.url).href,
-  new URL("../assets/gal11.jpeg", import.meta.url).href,
-  new URL("../assets/gal12.jpeg", import.meta.url).href,
+  new URL("../assets/gal9.webp", import.meta.url).href,
+  new URL("../assets/gal10.webp", import.meta.url).href,
+  new URL("../assets/gal11.webp", import.meta.url).href,
+  new URL("../assets/gal12.webp", import.meta.url).href,
 ];
 
 const mandiriMikail = new URL(
-  "../assets/mikail mandiri.png",
+  "../assets/mikail mandiri.webp",
   import.meta.url
 ).href;
 
 const mandiriHasmita = new URL(
-  "../assets/hasmita mandiri.png",
+  "../assets/hasmita mandiri.webp",
   import.meta.url
 ).href;
 
@@ -1644,9 +1644,10 @@ function GallerySection({
         overflow: "visible",
         ...(light
           ? {
-              background: "transparent",
+              background: "#ffffff",
             }
           : {
+              backgroundColor: "#a9003b",
               backgroundImage: `url(${background})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
