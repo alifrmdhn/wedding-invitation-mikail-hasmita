@@ -435,7 +435,7 @@ export default function Hero() {
           Dengan memohon rahmat dan ridho Allah
           subhanahu Wa Ta&apos;ala., kami mengundang
           Bapak/Ibu/Saudara/i untuk hadir dan memberikan
-          do&apos;a rest pada acara pernikahan kami.
+          do&apos;a restu pada acara pernikahan kami.
         </p>
         <div
           style={{
